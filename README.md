@@ -1,6 +1,6 @@
-# ⚡ G-Filler — AI Google Form Quiz Solver Chrome Extension
+# ⚡ GFiller — AI Google Form Quiz Solver Chrome Extension
 
-**G-Filler** is a Chrome extension that scans Google Form quizzes, finds the verified answers using Google's Gemini AI, and automatically selects the choices and fills text fields in one click.
+**GFiller** is a Chrome extension that scans Google Form quizzes, finds the verified answers using Google's Gemini AI, and automatically selects the choices and fills text fields in one click.
 
 ---
 
@@ -12,17 +12,17 @@
 4. In the top-left corner, click **Load unpacked**.
 5. Select the folder on your Desktop:
    ```
-   /Users/parshawshah/Desktop/G-Filler
+   /Users/parshawshah/Desktop/GFiller
    ```
-6. The **G-Filler** icon (`G`) will now appear in your Chrome toolbar!
-   *(Click the puzzle piece icon in Chrome toolbar to pin G-Filler for easy access).*
+6. The **GFiller** icon (`G`) will now appear in your Chrome toolbar!
+   *(Click the puzzle piece icon in Chrome toolbar to pin GFiller for easy access).*
 
 ---
 
 ## 🔑 How to Get and Set Your Google Gemini API Key
 
 1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey) and click **Get API Key** (it is free).
-2. Click the **G-Filler** icon in your Chrome toolbar.
+2. Click the **GFiller** icon in your Chrome toolbar.
 3. Paste your API key into the **Google Gemini API Key** box and click **Save**.
 4. The key is securely saved in your browser's local storage.
 
@@ -31,10 +31,10 @@
 ## 📝 How to Use on Google Forms
 
 1. Open any Google Form Quiz (e.g., `https://docs.google.com/forms/...`).
-2. Click the **G-Filler** extension icon in your Chrome toolbar.
+2. Click the **GFiller** extension icon in your Chrome toolbar.
 3. Select your preferred model (Default is **Gemini 3.8 Flash** for fast, high-accuracy answers).
 4. Click **⚡ Solve & Auto-Fill Form**.
-5. G-Filler will:
+5. GFiller will:
    - Scan the quiz questions and choices.
    - Send them to Gemini AI to deduce the correct answers.
    - Automatically click the correct radio buttons and checkboxes.
@@ -47,7 +47,7 @@
 ## 📁 File Structure
 
 ```
-G-Filler/
+GFiller/
 ├── manifest.json         # Chrome Extension Manifest V3
 ├── popup/
 │   ├── popup.html        # Clean popup user interface
