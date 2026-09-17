@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node & dependencies
+node_modules/
+npm-debug.log*
+
+# Environment & local files
+.env
+.env.local
+*.log
+scratch/

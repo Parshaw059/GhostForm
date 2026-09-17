@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G-Filler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-icon">G</div>
+        <div class="brand-text">
+          <h1>G-Filler</h1>
+          <span class="badge">AI Quiz Solver</span>
+        </div>
+      </div>
+      <div class="status-indicator" id="statusIndicator" title="Ready">
+        <span class="status-dot"></span>
+        <span class="status-text" id="statusLabel">Ready</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- API Key Section -->
+      <section class="card">
+        <div class="card-header">
+          <label for="apiKey">Google Gemini API Key</label>
+          <a href="https://aistudio.google.com/app/apikey" target="_blank" class="help-link" title="Get a free Gemini API Key from Google AI Studio">Get Free Key ↗</a>
+        </div>
+        <div class="input-group">
+          <input 
+            type="password" 
+            id="apiKey" 
+            placeholder="Paste AI Studio key (AIzaSy...)" 
+            autocomplete="off" 
+            spellcheck="false"
+          />
+          <button type="button" id="toggleKeyVis" class="icon-btn" title="Show/Hide Key">👁️</button>
+          <button type="button" id="saveKeyBtn" class="btn btn-secondary">Save</button>
+        </div>
+        <div id="keySaveMsg" class="feedback-msg"></div>
+      </section>
+
+      <!-- Settings Section -->
+      <section class="card settings-card">
+        <div class="setting-row">
+          <label for="modelSelect">AI Model</label>
+          <select id="modelSelect">
+            <option value="gemini-3.8-flash" selected>Gemini 3.8 Flash (Latest & Fast)</option>
+            <option value="gemini-3.6-flash">Gemini 3.6 Flash</option>
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+            <option value="gemini-1.5-flash">Gemini 1.5 Flash</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Action Section -->
+      <section class="actions">
+        <button id="fillFormBtn" class="btn btn-primary btn-large">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-text">Solve & Auto-Fill Form</span>
+        </button>
+      </section>
+
+      <!-- Progress / Activity Logs -->
+      <section class="card log-card" id="logSection">
+        <div class="card-header">
+          <span>Activity Log</span>
+          <span id="questionCountBadge" class="count-badge" style="display: none;">0 questions</span>
+        </div>
+        <div class="log-container" id="logContainer">
+          <div class="log-entry log-muted">Click "Solve & Auto-Fill Form" to begin.</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Auto-fills answers naturally without leaving any AI labels on the page.</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

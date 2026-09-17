@@ -1,0 +1,6 @@
+/* Stealth Mode: No visible AI markings or indicators */
+.g-filler-highlight,
+.g-filler-badge,
+.g-filler-selected-option {
+  display: none !important;
+}
