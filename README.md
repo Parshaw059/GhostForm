@@ -32,7 +32,7 @@
 
 1. Open any Google Form Quiz (e.g., `https://docs.google.com/forms/...`).
 2. Click the **G-Filler** extension icon in your Chrome toolbar.
-3. Select your preferred model (Default is **Gemini 2.0 Flash** for fast, high-accuracy answers).
+3. Select your preferred model (Default is **Gemini 3.8 Flash** for fast, high-accuracy answers).
 4. Click **⚡ Solve & Auto-Fill Form**.
 5. G-Filler will:
    - Scan the quiz questions and choices.
@@ -55,7 +55,7 @@ G-Filler/
 │   └── popup.js          # API key management, Gemini API caller & tab bridge
 ├── content/
 │   ├── content.js        # Form DOM scanner, click simulator & text filler
-│   └── content.css       # Visual answer badges & highlights
+│   └── content.css       # Stealth mode styling
 └── icons/
     ├── icon16.png        # Toolbar icon (16x16)
     ├── icon48.png        # Extension manager icon (48x48)
