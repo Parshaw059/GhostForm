@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "GFiller - AI Quiz & Form Solver",
+  "name": "GhostForm - Stealth AI Quiz Solver",
   "version": "1.0.0",
-  "description": "Automatically solves and fills Google Form quiz questions stealthily using Google Gemini AI.",
+  "description": "Stealthily solves Google Form quiz questions with AI without leaving any trace.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -15,7 +15,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "GFiller: AI Quiz Solver"
+    "default_title": "GhostForm: Stealth Quiz Solver"
   },
   "permissions": [
     "activeTab",
